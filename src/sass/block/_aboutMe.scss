@@ -1,0 +1,39 @@
+.aboutMe {
+   padding-top: 120px;
+   &-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 200px 200px 200px;
+      gap: 40px 40px;
+   }
+   &_title {
+      margin-top: 6px;
+   }
+   &__text {
+      margin-top: 20px;
+      font-weight: 500;
+      font-size: 14px;
+      line-height: 21px;
+      color: #000000;
+   }
+   &__descr-wrap {
+      padding-top: 40px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 95px 95px;
+      gap: 50px 20px;
+   }
+   &__descr-scils {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      @include before_circle;
+   }
+   &__descr-text{
+      width: 225px;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+      color: #000000;
+   }
+}
