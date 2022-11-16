@@ -1,15 +1,17 @@
 .promo {
    min-height: 100vh;
    position: relative;
-   background: url("../../img/promo/Background.jpg") no-repeat 50%/cover;
+   background: url("../../img/promo/IMG_1934.JPG") no-repeat 50%/cover;
    padding-top: 205px;
    &__title {
       margin-top: 10px;
       width: 530px;
+      color: white;
    }
    &__subtitle { 
       position: relative;
       padding-left: 10px;
+      color: white;
       z-index: 2;
       @include before_circle;
     
@@ -23,10 +25,12 @@
    }
    &__link {
       font-weight: bold;
-      color: #000000;
+      color: white;
       &:hover {
-         color:#000000;
+         color:white;
          text-decoration: none;
+         color:black;
+         
       }
    }
   

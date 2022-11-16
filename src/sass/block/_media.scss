@@ -1,0 +1,348 @@
+@media (max-width:1439px) {
+   .sidepanel {
+      display: none;
+   }
+}
+
+@media (max-width:1200px) {
+   .container {
+      max-width: 960px;
+   }
+   .aboutMe{
+      &-grid {
+         grid-template-columns: 400px 500px;
+         column-gap: 50px;
+      }
+      &__descr-scils{
+         grid-template-columns: 25px 185px;
+         gap: 30px;
+      }
+      &__descr-text {
+         width: 100%;
+      }
+   }
+   .skills {
+      &__wrapper{
+         grid-template-columns: repeat(auto-fit,270px);
+         justify-content: space-between;
+      }
+   }
+   .procent{
+      &__wrapper{
+         grid-template-columns: repeat(auto-fit,350px);
+         grid-template-rows: repeat(3,55px);
+         justify-content: space-around;
+      }
+   }
+   .portfolio {
+      &__wrapper {
+         grid-template-columns: repeat(auto-fit, 280px) ;
+         grid-auto-rows: 280px;
+         justify-content: space-around;
+         row-gap: 35px;
+         .horizonal, .vertical{
+            grid-row: unset;
+            grid-column: unset;
+         }
+      }
+   }
+   .contacts {
+      &__wrapper{
+         padding: 0;
+         grid-template-columns: 314px 500px;
+      }
+      &__form {
+         grid-template-columns: repeat(2, 247px);
+         gap: 35px 1%;
+      }
+   }
+}
+
+@media (max-width:992px) {
+   .container {
+      max-width: 720px;
+   }
+   .title{
+      
+      &_fz48{
+         font-size: 35px;
+      }
+      &_fz36{
+         font-size: 30px;
+      }
+   }
+   .promo{
+      &__title{
+         width: 56%;
+         line-height: 38px;
+      }
+   }
+   .aboutMe{
+      &-grid {
+         grid-template-columns: 300px 380px;
+         column-gap: 40px;
+      }
+      &__descr-wrap{
+         grid-template-columns: 380px;
+         grid-auto-rows: minmax(115, auto);  
+      }
+      &__descr-scils{
+         grid-template-columns: 20px 320px;
+            gap: 40px;
+      } 
+      &__img {
+         grid-row: unset;
+      }
+   }
+   .resume{
+      &__wrapper{
+         padding: 60px 10px 0 10px;
+         grid-template-columns: repeat(2,1fr);
+         column-gap: 12%;
+      }
+      &__item{
+         &::before{
+            width: 10%;
+            top: 28%;
+         }
+         &-icon{
+            top: 26%;
+            left: 15%;
+         }
+      }
+        
+   }
+   .skills {
+      padding-top: 60px;
+      &__wrapper{
+         grid-template-columns: repeat(auto-fit,270px);
+         justify-content: space-between;
+      }
+      &__item-title{
+         margin-top: 15px;
+      }
+      &__item-descr{
+         margin-top: 5px;
+         line-height: 16px;
+      }
+   }
+   .procent{
+      &__wrapper{
+         grid-template-columns: repeat(auto-fit,320px);
+      }
+   }
+   .prise{
+      &__wrapper{
+         grid-template-columns: repeat(auto-fit,330px);
+         justify-content: center;
+         column-gap: 3%;
+         &-grid{
+            justify-content: space-evenly;
+         }
+      }
+   }
+   .contacts {
+      &__wrapper{
+         grid-template-columns: 43% 50%;
+      }
+      &__form {
+         grid-template-columns: repeat(auto-fit, 50%);
+         grid-template-rows: 45px 190px 78px;
+      }
+      &__triggers {
+         grid-row: 3 / 4;
+         row-gap: 10%;
+      }
+      &__btn {
+         grid-row: 2 / 3;
+         width: 75%;
+         height: 95%;
+         margin: 0 auto;
+      }
+      &__police {
+         grid-column: 1 / 2;
+         width: 75%;
+         margin: 0 auto;
+      }
+   }
+}
+@media (max-width:768px) {
+   .container {
+      max-width: 540px;
+   }
+   .title{
+      
+      &_fz48{
+         font-size: 28px;
+      }
+   }
+   .promo{
+      &__title{
+         width: 74%;
+         line-height: 35px;
+      }
+   }
+   .aboutMe {
+      padding-top: 40px;
+      &-grid{
+         grid-template:400px auto auto/1fr ;
+      }
+      &__descr-wrap{
+         grid-template-columns: repeat(2, 260px);
+      }
+      &__descr-scils {
+         grid-template-columns: 40px 200px;
+         column-gap: 20px;
+      }
+   }
+   .resume{
+      &__wrapper{
+         padding: 40px 15px 0 15px;
+         grid-template-columns: 1fr;
+         gap: 55px;
+      }
+      &__item{
+         &::before{
+            width: 9%;
+         }
+         &-head{
+            padding: 34px 0 0 100px;
+         }
+         &-icon{
+            left: 12%;
+         }
+      }
+   }
+   .skills {
+      &__wrapper{
+         grid-template-columns: repeat(auto-fit,270px);
+         justify-content: center;
+      }
+   }
+   .procent{
+      &__wrapper{
+         grid-template-columns:repeat(auto-fit, 320px);
+         grid-template-rows: repeat(6, 55px);
+      }
+   }
+   .portfolio {
+      padding-top: 60px;
+   }
+   .prise {
+      padding: 60px 0 60px 0;
+      &__wrapper {
+         min-height: 400px;
+         row-gap: 5%;
+      }
+   } 
+   .contacts {
+      padding-top: 40px;
+      &__wrapper {
+         grid-template-columns: 1fr;
+      }
+      &__photo {
+         display: none;
+      }
+      &__form {
+         grid-template-columns: 1fr;
+         grid-template-rows: 45px 45px 190px 78px;
+      }
+      #input__email {
+         grid-row: 2 / 3;
+      }
+      &__textarea {
+         grid-row: 3 / 4;
+      }
+      &__triggers {
+         grid-template-columns: 1fr;
+         grid-row: 4 / 5;
+      }
+   }  
+}
+     
+
+
+@media (max-width:576px) {
+   .container {
+      width: 100%;
+      padding: 0 10px;
+   }
+   .title{
+      
+      &_fz48{
+         font-size: 26px;
+      }
+      &_fz36{
+         font-size: 24px;
+         line-height: 36px;
+      }
+   }
+   .promo{
+      &__title {
+         width: 56%;
+      }
+      &__btns {
+         margin-top: 30px;
+      }
+   }
+   .hamburger {
+      right: 20px;
+   }
+   .menu {
+      &__block {
+         width: 250px;
+         padding-left: 20px;
+      }
+   }
+   .aboutMe {
+      &-grid{
+         grid-template:340px auto auto/1fr ;
+      }
+      &__descr-wrap{
+         grid-template-columns: 1fr;
+      }
+   }
+   .resume{
+      &__wrapper{
+         padding: 40px 15px 0 15px;
+         grid-template-columns: 290px;
+         gap: 55px;
+      }
+      &__item{
+         &::before{
+            top: 32%;
+         }
+         &-head{
+            padding: 45px 0 0 95px;
+         }
+         &-icon{
+            top: 30%;
+            left: 14%;
+         }
+      }
+   }
+   .skills {
+      &__wrapper{
+         grid-template-columns:1fr;
+      }
+   }
+   .procent{
+      &__wrapper{
+         grid-template-columns:repeat(auto-fit, 300px);
+      }
+      &__scale{
+         width: 100%;
+      }
+   }
+   .prise{
+      &__wrapper{
+         grid-template-columns: repeat(auto-fit, 295px);
+      }
+   }
+   .contacts {
+      &_subtitle {
+         margin-top: 26px;
+         margin-bottom: 15px;
+      }
+   }
+}

@@ -1,0 +1,39 @@
+.prise {
+   padding-top: 66px;
+   &__wrapper {
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: repeat(2,400px);
+      grid-template-rows: 45px 45px;
+      grid-auto-rows: minmax(45px, auto);
+      row-gap: 10%;
+      justify-content: space-between;
+      &-grid {
+         display: grid;
+         grid-template-columns: 186px 106px;
+         justify-content: space-around;
+      }
+   }
+
+   &__title{
+      position: relative;
+      @include before_circle;
+      &:before {
+         width: 15px;
+         height: 15px;
+         top: 10%;
+         left: -15%;
+      }
+   }
+   &__text {
+      grid-column:1/3;
+      font-weight: 500;
+      font-size: 12px;
+      line-height: 18px;
+   }
+   &__number {
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 21px;
+   }
+}

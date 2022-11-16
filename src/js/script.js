@@ -9,3 +9,10 @@ const hamburger = document.querySelector(`.hamburger`),
    closeElem.addEventListener(`click`, () => {
       menu.classList.remove(`active`);
 }); 
+
+const counters = document.querySelectorAll('.procent__subtitle'),
+      lines = document.querySelectorAll('.procent__scale span');
+
+ counters.forEach( (item, i)=> {
+      lines[i].style.width = item.innerHTML;
+ });     
